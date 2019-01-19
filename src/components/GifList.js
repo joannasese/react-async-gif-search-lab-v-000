@@ -1,10 +1,10 @@
 import React from 'react'
 
-const GifList = (props) => {
+const GifList = ({gifs}) => {
   return(
     <div>
       <ul>
-        {props.gifs.map(gif => <li><img key={gif.id} src={gif.url} alt="gif" /></li>)}
+        {{gifs}.map(gif => <li><img key={gif.id} src={gif.url} alt="gif" /></li>)}
       </ul>
     </div>
   )
